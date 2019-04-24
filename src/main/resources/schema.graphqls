@@ -1,0 +1,13 @@
+type Query {
+  jobOpeningsById(_id: ID): JobOpenings
+  jobOpenings: [JobOpenings]
+}
+
+type JobOpenings {
+	_id: ID!
+	openingDescription: String!
+	startDate: String!
+	endDate: String!
+	expectedSalary: String!
+	createdBy: ID!
+}
